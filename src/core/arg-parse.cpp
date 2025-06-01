@@ -25,9 +25,9 @@ Usage examples:
 Divides on three main sections: Assembler, Formatter and VVM(Vangers Virtual Machine).
 
 Assembler options:
-    -a, --assemble: Assemble script file(s). Takes the input, output and dictionary's file name from vbsa.cfg file.
-        -o, --output <file name>: Name of output binary file. Required by Assembler.
-        -d, --dictionary <file name>: Load dictionary from file. Required by Assembler.
+    -a, --assemble <input file name>: Assemble script file. Requires the output and dictionary to be specified.
+        -o, --output <file name>: Name of output binary file.
+        -d, --dictionary <file name>: Load dictionary from file.
     -an, --analyze <token>: Analyze token as if it was assembled to the binary script.
     -W<error-type>: Lower the level of error case to warning.
 
@@ -40,7 +40,6 @@ VVM options:
             You can specify "-" as target file, if you don't want to actually run any script (for example, you just want to open VVM console)
         --interactive: Instead of autorun, VVM console will be opened, where you can track registers, actions, read/unread values, and so on.
         --history-size <size>: Change the size of VVM's actions history.
-    Note - you will be able to see the original token of instruction at the error if you load the dictionary of input script.
 
 Other options:
     -h, --help: Print text about VBSA and its options.
